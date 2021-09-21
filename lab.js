@@ -7,6 +7,16 @@
 */
 
 //CODE HERE
+var lovesCode = true
+if(lovesCode = true){
+  console.log('i love to code')
+} else {
+  console.log('coding has its challanges')
+}
+
+console.log(lovesCode)
+
+
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29
@@ -23,6 +33,14 @@ var brittanisBirthYear = 1986
 //CODE HERE
 
 
+if (amysAge > brittanisAge){
+  console.log('Amys is Older')
+} else if(brittanisAge > amysAge){
+  console.log('brittani is older')
+} else if (brittanisAge === amysAge){
+  console.log('They are the same age')
+} ;
+
 ////////// PROBLEM 3 //////////
 
 /*
@@ -30,7 +48,12 @@ var brittanisBirthYear = 1986
 */
 
 //CODE HERE
-
+if (amysBirthYear === brittanisBirthYear){
+  console.log('They were born in the same year')
+} 
+else if (amysBirthYear !== brittanisBirthYear){
+  console.log('They were not born in the same year')
+}
 
 
 // For problems 4-5 use the following lines of code:
@@ -42,6 +65,12 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
+var firstItem = arr[0]
+
+if (firstItem = 10){
+  console.log('you are correct')
+}
+
 
 
 ////////// PROBLEM 5 //////////
@@ -50,6 +79,9 @@ var arr = [10,20,30,40,50,60]
 */
 
 //Code Here
+lastItemRemoved = arr.pop()
+
+console.log(arr, lastItemRemoved)
 
 ////////// PROBLEM 6 //////////
 
@@ -62,7 +94,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-
+for(let i = 0; i < family.length; i++){
+ console.log(i, family[i])
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -77,13 +111,19 @@ let evensArr = []
 */
 
 //Code Here
+for(let i = 0; i < nums.length; i++){
+  if(nums[i]%2==0){
+    evensArr.push(nums[i])
+  }
+  console.log(i, nums[i],evensArr)
+ }
 
 
 
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
-var score = 74
+var score = 59
 // Do not edit the code above.
 
 /*
@@ -91,6 +131,23 @@ var score = 74
 */
 
 //Code Here
+if (score >= 90){
+  console.log('A')
+} 
+else if (score >= 80 && score <= 89){
+  console.log('B')
+}
+else if (score >= 70 && score <= 79){
+  console.log('C')
+}
+else if (score >= 60 && score <= 69){
+  console.log('D')
+}
+else if (score < 60){
+  console.log('F')
+}
+
+
 
 
 ////////// Intermediate Problems //////////
@@ -103,6 +160,7 @@ var score = 74
 */
 
 //CODE HERE
+
 
 
 // Try to change the value of changeMyMind (irrespective of whether it is true or false) and then console.log it's new status. It should log true. Hint: use the not operator.
